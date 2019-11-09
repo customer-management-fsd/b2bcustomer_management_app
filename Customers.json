@@ -1,0 +1,192 @@
+{
+    "customers": [
+      {
+        "customerId": 1,
+        "customerFirstName": "Arpit",
+        "customerLastName": "Garg",
+        "address":
+        [ {"Description":"A-502", "City":"Mumbai", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "18.987807", 
+          "lng": "72.836447" } ],
+          "orders": [ {
+            "productId": 2,
+            "productName": "Garden Cart",
+            "productCode": "GDN-0023",
+            "releaseDate": "March 18, 2016",
+            "description": "15 gallon capacity rolling garden cart",
+            "price": 32.99,
+            "starRating": 2.2,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+          }, {
+            "productId": 5,
+            "productName": "Hammer",
+            "productCode": "TBX-0048",
+            "releaseDate": "May 21, 2016",
+            "description": "Curved claw steel hammer",
+            "price": 8.9,
+            "starRating": 3.8,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+          },
+          {
+            "productId": 8,
+            "productName": "Saw",
+            "productCode": "TBX-0022",
+            "releaseDate": "May 15, 2016",
+            "description": "15-inch steel blade hand saw",
+            "price": 11.55,
+            "starRating": 3.4,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+          }
+        ],
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+      },
+      {
+        "customerId": 2,
+        "customerFirstName": "Rahul",
+        "customerLastName": "Singla",
+        "address":
+        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
+          "lng": "77.231495" } ],
+          "orders": [ 
+          {
+            "productId": 8,
+            "productName": "Saw",
+            "productCode": "TBX-0022",
+            "releaseDate": "May 15, 2016",
+            "description": "15-inch steel blade hand saw",
+            "price": 11.55,
+            "starRating": 3.4,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+          },
+          {
+            "productId": 10,
+            "productName": "Video Game Controller",
+            "productCode": "GMG-0042",
+            "releaseDate": "October 15, 2015",
+            "description": "Standard two-button video game controller",
+            "price": 35.95,
+            "starRating": 3.3,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+          }
+        ],
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+      },
+      {
+        "customerId": 3,
+        "customerFirstName": "Preeti",
+        "customerLastName": "Sinha",
+        "address":
+        [ {"Description":"P-902", "City":"Kolkata", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "22.562627", 
+          "lng": "88.363044" } ],
+          "orders": [ {
+            "productId": 2,
+            "productName": "Garden Cart",
+            "productCode": "GDN-0023",
+            "releaseDate": "March 18, 2016",
+            "description": "15 gallon capacity rolling garden cart",
+            "price": 32.99,
+            "starRating": 2.2,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+          }, {
+            "productId": 5,
+            "productName": "Hammer",
+            "productCode": "TBX-0048",
+            "releaseDate": "May 21, 2016",
+            "description": "Curved claw steel hammer",
+            "price": 8.9,
+            "starRating": 3.8,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+          },
+          {
+            "productId": 8,
+            "productName": "Saw",
+            "productCode": "TBX-0022",
+            "releaseDate": "May 15, 2016",
+            "description": "15-inch steel blade hand saw",
+            "price": 11.55,
+            "starRating": 3.4,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+          },
+          {
+            "productId": 10,
+            "productName": "Video Game Controller",
+            "productCode": "GMG-0042",
+            "releaseDate": "October 15, 2015",
+            "description": "Standard two-button video game controller",
+            "price": 35.95,
+            "starRating": 3.3,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+          }
+        ],
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+      },
+      {
+        "customerId": 4,
+        "customerFirstName": "Pradeep",
+        "customerLastName": "Kumar",
+        "address":
+        [ {"Description":"576", "City":"Chennai", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "13.084622", 
+          "lng": "80.248357" } ],
+          "orders": [ {
+            "productId": 2,
+            "productName": "Garden Cart",
+            "productCode": "GDN-0023",
+            "releaseDate": "March 18, 2016",
+            "description": "15 gallon capacity rolling garden cart",
+            "price": 32.99,
+            "starRating": 2.2,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+          }, {
+            "productId": 5,
+            "productName": "Hammer",
+            "productCode": "TBX-0048",
+            "releaseDate": "May 21, 2016",
+            "description": "Curved claw steel hammer",
+            "price": 8.9,
+            "starRating": 3.8,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+          },
+          {
+            "productId": 8,
+            "productName": "Saw",
+            "productCode": "TBX-0022",
+            "releaseDate": "May 15, 2016",
+            "description": "15-inch steel blade hand saw",
+            "price": 11.55,
+            "starRating": 3.4,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+          }
+        ],
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+      },
+      {
+        "customerId": 5,
+        "customerFirstName": "Shubham",
+        "customerLastName": "Singh",
+        "address":
+        [ {"Description":"345", "City":"Hyderabad", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "17.384052", 
+          "lng": "78.456355" } ],
+        "orders": [ {
+          "productId": 2,
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "releaseDate": "March 18, 2016",
+          "description": "15 gallon capacity rolling garden cart",
+          "price": 32.99,
+          "starRating": 2.2,
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+        }, {
+          "productId": 5,
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "releaseDate": "May 21, 2016",
+          "description": "Curved claw steel hammer",
+          "price": 8.9,
+          "starRating": 3.8,
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+        }
+      ],
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+      }
+    ]  
+} 
+  
