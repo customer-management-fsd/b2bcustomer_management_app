@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { CustomerComponent } from './customer/customer.component';
 import { OrdersComponent } from './orders/orders.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

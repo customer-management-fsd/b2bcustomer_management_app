@@ -14,9 +14,24 @@
                         <li>
                             <a><span class="glyphicon glyphicon-plus"></span> Edit Customer</a>
                         </li>
+
+                   
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img [src]='customers.imageUrl' class="card-img" style=" height: 100%; width: 100%" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ customers.customerFirstName }}  {{ customers.customerLastName }}</h5>
+                      <p class="card-text"><small class="text-muted">{{ customers.address[0].Description}}</small></p>
+                      <p class="card-text"><small class="text-muted">{{customers.address[0].Country}}  {{customers.address[0].State}}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>    </div>
 </div>
