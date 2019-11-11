@@ -40,7 +40,7 @@ export class CustomerComponent implements OnInit {
                                           imageUrl }
 
                                               ));
-                                              return console.log(this.items);
+                                              return console.log(this.customers);
                                             });
 
 
@@ -52,6 +52,8 @@ onChangePage(pageOfItems: Array<any>) {
     // update current page of items
     this.pageOfItems = pageOfItems;
 }
+
+
 
 
 }

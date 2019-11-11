@@ -28,9 +28,9 @@
         </div>
         <div class="container">
             <div class="row cardContainer" >
-                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let item of pageOfItems">
+                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of pageOfItems">
                     <div class="card" style="border: 5px black;">
-                        <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',item.customerId]">{{item.customerFirstName +" "+ item.customerLastName}}</a> <span class="glyphicon glyphicon-edit"></span></div>
+                        <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstName +" "+ cust.customerLastName}}</a> <span class="glyphicon glyphicon-edit"></span></div>
                         <div class="cardBody">
                             <div class="clearfix">
                                 <div class="pull-left cardBodyLeft">
@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="pull-left cardBodyRight">
                                     <!-- <div class="cardBodyContent">{{cust.customerCountry}}, {{cust.customerCity}}</div> -->
-                                    <div class="cardBodyContent">{{item.customerCountry}}, {{item.customerCity}}</div>
+                                    <div class="cardBodyContent">{{cust.customerCountry}}, {{cust.customerCity}}</div>
                                     <div> <a class="btn-link"> View Orders </a>
                                     </div>
                                 </div>

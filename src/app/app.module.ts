@@ -9,6 +9,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { JwPaginationComponent } from 'jw-angular-pagination';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,10 @@ import { JwPaginationComponent } from 'jw-angular-pagination';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot ({
+      apiKey: 'AIzaSyBKmma20Z9FmYakWYQ8G_WMvvNY8YXilNE'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
