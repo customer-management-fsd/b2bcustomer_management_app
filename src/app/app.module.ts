@@ -7,8 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { CustomerComponent } from './customer/customer.component';
 import { OrdersComponent } from './orders/orders.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
-import { HttpClientModule } from '@angular/common/http';
-import { JwPaginationComponent } from 'jw-angular-pagination';
 
 @NgModule({
   declarations: [
@@ -16,13 +14,11 @@ import { JwPaginationComponent } from 'jw-angular-pagination';
     HeaderComponent,
     CustomerComponent,
     OrdersComponent,
-    CustomerDetailsComponent,
-    JwPaginationComponent
+    CustomerDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
