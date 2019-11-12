@@ -1,0 +1,38 @@
+<div class="customers view indent">
+    <div class="container">
+            <h3><span class="glyphicon glyphicon-user"></span> Customers Information</h3>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a><span class="glyphicon glyphicon-th-large"></span> Customer Details</a>
+                        </li>
+                        <li>
+                            <a><span class="glyphicon glyphicon-align-justify"></span> Customer Orders</a>
+                        </li>
+                        <li>
+                             <a [routerLink]="['/customers', customers.customerId, 'edit']"><span class="glyphicon glyphicon-plus" ></span> Edit Customer</a> 
+                            <!-- <button style="background-color:white; border: 0px white; color:blue" ><span class="glyphicon glyphicon-plus"></span>Edit Customer  </button> -->
+                          </li>
+
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img [src]='customers.imageUrl' class="card-img" style=" height: 100%; width: 100%" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ customers.customerFirstName }}  {{ customers.customerLastName }}</h5>
+                      <p class="card-text"><small class="text-muted">{{customers.streetName}} {{ customers.doorNo}}</small></p>
+                      <p class="card-text"><small class="text-muted">{{customers.country}}  {{customers.state}}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>    </div>
+</div>

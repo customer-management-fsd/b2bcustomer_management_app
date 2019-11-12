@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'b2bcustomer-management-app'`, () => {
+  it(`should have as title 'Customer-Manager-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('b2bcustomer-management-app');
+    expect(app.title).toEqual('Customer-Manager-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('b2bcustomer-management-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Customer-Manager-app app is running!');
   });
 });
