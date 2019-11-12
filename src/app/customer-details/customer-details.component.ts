@@ -10,12 +10,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CustomerDetailsComponent implements OnInit {
   customers: ICustomer;
+  latitude: number;
+  longitude: number;
+
   // tslint:disable-next-line: variable-name
   constructor(private _customerServices: CustomersServices, private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit() {
     const id = +this._route.snapshot.paramMap.get('id');
-    this._customerServices.getCustomerById(id).subscribe(customers => this.customers = customers);
+    this._customerServices.getCustomerById(id).subscribe((customers) => { 
+      this.customers = customers;
+      console.log(this.customers);
+    });
+    this.latitude = 88.88888888888888;
+    this.longitude = 99.9999999999999999;
+    // this.latitude = this.customers.latitude;
+    // this.longitude = this.customers.longitude;
   }
   onBack() {
     this._router.navigate(['/customer']);

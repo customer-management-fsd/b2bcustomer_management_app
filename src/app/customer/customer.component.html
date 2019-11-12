@@ -19,7 +19,7 @@
                         <div class="form-group">
                             <label class="navbarText col-sm-2">Filter:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="novalidate form-control"/>
+                                <input type="text" [(ngModel)] = 'filterText' [ngModelOptions]="{standalone:true}"/>
                             </div>
                         </div>
                     </form>
@@ -28,17 +28,22 @@
         </div>
         <div class="container">
             <div class="row cardContainer" *ngIf='showCard'>
-                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of customers">
+                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of filteredList">
                     <div class="card" style="border: 5px black;">
-                        <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstNamie +" "+ cust.customerLastName}}</a> <span class="glyphicon glyphicon-edit"></span></div>
+                        <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstName +" "+ cust.customerLastName}}</a> <span class="glyphicon glyphicon-edit"></span></div>
                         <div class="cardBody">
                             <div class="clearfix">
                                 <div class="pull-left cardBodyLeft">
                                     <a class="white"><img class="cardImage" /></a>
                                 </div>
                                 <div class="pull-left cardBodyRight">
-                                    <div class="cardBodyContent">{{cust.address[0].Country}}, {{cust.address[0].City}}</div>
-                                    <div> <a class="btn-link"> View Orders </a>
+                                    <div class="cardBodyContent">{{cust.state}}, {{cust.country}}</div>
+                                    <button (click)='showHide()' style="background-color:white; border: 0px white; color:blue"> View Orders</button>
+                                    
+                                    <div *ngIf=btnenable>
+                                            <tr *ngFor = "let item of cust['orders']">
+                                            <td >{{item.productName}}</td>  
+                                        </tr>
                                     </div>
                                 </div>
                             </div>
@@ -66,14 +71,8 @@
                             <tr *ngFor="let customer of customers">
                                 <td><a [routerLink]="['/customers/',customer.customerId]"><img [src] ='customer.imageUrl' style="height:50%; width: 50%" class="cardImage" alt="Customer Image" /></a></td>
                                 <td><a [routerLink]="['/customers/',customer.customerId]">{{customer.customerFirstName + ' ' + customer.customerLastName}}</a></td>
-                                <td>{{customer.address[0].City}}, {{customer.address[0].State}}</td>
-                                <td>
-                                    <a href="#/customerorders/{{customer.id}}" class="btn-link">
-                                        <span data-ng-pluralize count="customer.orderCount"
-                                              when="{'1': 'Order','other': 'Orders'}">
-                                        </span>
-                                    </a>
-                                </td>
+                                <td>{{customer.city}}, {{customer.state}}</td>
+                                <td><a [routerLink]="['/orders/',customer.customerId]" style="font-weight:bold" >My Orders</a></td>
                                 <td><button class="btn btn-danger" data-ng-click="vm.deleteCustomer(customer.id)">Delete</button></td>
                             </tr>
                         </tbody>
@@ -85,15 +84,9 @@
 
 
     <div class="pagination pagination-centered">
-        <ul class="pagination ">
-             <li data-page="-" ><a href="#" >&lt;</a></li>
-             <li data-page="1"><a href="#" >1</a></li>
-             <li data-page="2"><a href="#" >2</a></li>
-             <li data-page="3"><a href="#" >3</a></li>
-             <li data-page="4"><a href="#" >4</a></li>
-             <li data-page="5"><a href="#" >5</a></li>
-             <li data-page="+"><a href="#" >&gt;</a></li>
-       </ul>
+    <div class="card-footer pb-0 pt-3">
+        <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+    </div>
     </div>
     </div>
 </div>

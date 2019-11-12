@@ -5,7 +5,10 @@ export interface ICustomer {
     customerId: number;
         customerFirstName: string;
         customerLastName: string;
-        address: IAddress[];
-        orders: IOrders[];
+        state: string;
+        country: string;
+        latitude: number;
+        longitude: number;
         imageUrl: string;
+        orders: IOrders[];
 }
