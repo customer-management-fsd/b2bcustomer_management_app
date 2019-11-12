@@ -12,11 +12,32 @@
                             <a><span class="glyphicon glyphicon-align-justify"></span> Customer Orders</a>
                         </li>
                         <li>
-                            <a><span class="glyphicon glyphicon-plus"></span> Edit Customer</a>
+                            <a [routerLink]="['/customers',customers.cutomerId,'edit']"><span class="glyphicon glyphicon-plus"></span> Edit Customer</a>
                         </li>
+
+                   
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img [src]='' class="card-img" style=" height: 100%; width: 100%" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ customers.customerFirstName}}</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                      <p class="card-text"><small class="text-muted">{{customers.country + "" + customers.state}}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+            </div>
+            <agm-map [latitude]="latitude" [longitude]="longitude">
+                <agm-marker [latitude]="latitude" [longitude]="longitude">
+                </agm-marker>
+           </agm-map>
+           
 </div>

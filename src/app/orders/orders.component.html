@@ -1,1 +1,37 @@
-<p>orders works!</p>
+<div *ngIf='id===0'>
+        <div *ngFor="let customer of customers" >
+          
+        <table>
+                <caption>orders of {{customer.customerFirstName}}</caption>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+            <tr *ngFor = "let item of customer['orders']">
+              <td >{{item.productName}}</td>
+              <td>{{item.price}}</td>
+            </tr>
+          </table>
+          <p>Total Sum of Orders {{IndividualOrdersTotal[ customers.indexOf(customer)]}} </p>
+        </div>
+        </div>
+        
+        <div *ngIf='id!==0'>
+          
+          <h5>Individual Order Details</h5>
+          <table>
+            <caption>orders of {{singleCustomer.customerFirstName}}</caption>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr *ngFor = "let item of singleCustomer['orders']">
+          <td >{{item.productName}}</td>
+          <td>{{item.price}}</td>
+        </tr>
+        </table>
+        <p>Total Sum of Orders {{IndividualOrdersTotal[0]}} </p>
+        </div>
+        
+        <hr>
+        
