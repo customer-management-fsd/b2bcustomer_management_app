@@ -21,6 +21,8 @@
                             <div class="col-sm-10">
                                 <input type="text" class="novalidate form-control"/>
                             </div>
+                            <button (click)="download()"> Download </button>
+                            <!-- <a href="http://localhost:3000/customers" download>Get CSV</a> -->
                         </div>
                     </form>
                 </div>
@@ -37,8 +39,8 @@
                                     <a class="white"><img class="cardImage" /></a>
                                 </div>
                                 <div class="pull-left cardBodyRight">
-                                    <!-- <div class="cardBodyContent">{{cust.customerCountry}}, {{cust.customerCity}}</div> -->
-                                    <div class="cardBodyContent">{{cust.customerCountry}}, {{cust.customerCity}}</div>
+                                    <div><img src={{cust.imageUrl}}/></div>
+                                    <div class="cardBodyContent">{{cust.state + ", " + cust.country}}</div>
                                     <div> <a class="btn-link"> View Orders </a>
                                     </div>
                                 </div>

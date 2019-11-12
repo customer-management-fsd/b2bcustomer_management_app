@@ -1,657 +1,644 @@
 {
-    "customers": [
-      {
-        "customerId": 1,
-        "customerFirstName": "Arpit",
-        "customerLastName": "Garg",
-        "address":
-        [ {"Description":"A-502", "City":"Mumbai", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "18.987807", 
-          "lng": "72.836447" } ],
-          "orders": [ {
-            "productId": 2,
-            "productName": "Garden Cart",
-            "productCode": "GDN-0023",
-            "releaseDate": "March 18, 2016",
-            "description": "15 gallon capacity rolling garden cart",
-            "price": 32.99,
-            "starRating": 2.2,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-          }, {
-            "productId": 5,
-            "productName": "Hammer",
-            "productCode": "TBX-0048",
-            "releaseDate": "May 21, 2016",
-            "description": "Curved claw steel hammer",
-            "price": 8.9,
-            "starRating": 3.8,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
-          },
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 2,
-        "customerFirstName": "Rahul",
-        "customerLastName": "Singla",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 3,
-        "customerFirstName": "Preeti",
-        "customerLastName": "Sinha",
-        "address":
-        [ {"Description":"P-902", "City":"Kolkata", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "22.562627", 
-          "lng": "88.363044" } ],
-          "orders": [ {
-            "productId": 2,
-            "productName": "Garden Cart",
-            "productCode": "GDN-0023",
-            "releaseDate": "March 18, 2016",
-            "description": "15 gallon capacity rolling garden cart",
-            "price": 32.99,
-            "starRating": 2.2,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-          }, {
-            "productId": 5,
-            "productName": "Hammer",
-            "productCode": "TBX-0048",
-            "releaseDate": "May 21, 2016",
-            "description": "Curved claw steel hammer",
-            "price": 8.9,
-            "starRating": 3.8,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
-          },
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 4,
-        "customerFirstName": "Pradeep",
-        "customerLastName": "Kumar",
-        "address":
-        [ {"Description":"576", "City":"Chennai", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "13.084622", 
-          "lng": "80.248357" } ],
-          "orders": [ {
-            "productId": 2,
-            "productName": "Garden Cart",
-            "productCode": "GDN-0023",
-            "releaseDate": "March 18, 2016",
-            "description": "15 gallon capacity rolling garden cart",
-            "price": 32.99,
-            "starRating": 2.2,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-          }, {
-            "productId": 5,
-            "productName": "Hammer",
-            "productCode": "TBX-0048",
-            "releaseDate": "May 21, 2016",
-            "description": "Curved claw steel hammer",
-            "price": 8.9,
-            "starRating": 3.8,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
-          },
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 5,
-        "customerFirstName": "Shubham",
-        "customerLastName": "Singh",
-        "address":
-        [ {"Description":"345", "City":"Hyderabad", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "17.384052", 
-          "lng": "78.456355" } ],
+  "customers": [
+    {
+      "customerId": 1,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
         "orders": [ {
-          "productId": 2,
           "productName": "Garden Cart",
           "productCode": "GDN-0023",
-          "releaseDate": "March 18, 2016",
-          "description": "15 gallon capacity rolling garden cart",
+          "purchaseDate": "March 18, 2016",
           "price": 32.99,
-          "starRating": 2.2,
-          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-        }, {
-          "productId": 5,
+          "starRating": 2.2
+        },
+        {
           "productName": "Hammer",
           "productCode": "TBX-0048",
-          "releaseDate": "May 21, 2016",
-          "description": "Curved claw steel hammer",
+          "purchaseDate": "May 21, 2016",
           "price": 8.9,
-          "starRating": 3.8,
-          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
         }
-      ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 6,
-        "customerFirstName": "Rajesh",
-        "customerLastName": "Mishra",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 7,
-        "customerFirstName": "Ajay",
-        "customerLastName": "Jadeja",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 8,
-        "customerFirstName": "Akash",
-        "customerLastName": "Gupta",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 9,
-        "customerFirstName": "Sumeet",
-        "customerLastName": "Jindal",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 10,
-        "customerFirstName": "Ankita",
-        "customerLastName": "Sharma",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 11,
-        "customerFirstName": "Sakshi",
-        "customerLastName": "Singh",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 12,
-        "customerFirstName": "Akansha",
-        "customerLastName": "Srivastava",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 13,
-        "customerFirstName": "Rahul",
-        "customerLastName": "Kumar",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 14,
-        "customerFirstName": "Mohit",
-        "customerLastName": "Sharma",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 15,
-        "customerFirstName": "Simran",
-        "customerLastName": "Saini",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId":16,
-        "customerFirstName": "Juhi",
-        "customerLastName": "Chawala",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 17,
-        "customerFirstName": "Bhumi",
-        "customerLastName": "Singh",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 18,
-        "customerFirstName": "Nishant",
-        "customerLastName": "Shukla",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 19,
-        "customerFirstName": "Puneet",
-        "customerLastName": "Jain",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      },
-      {
-        "customerId": 20,
-        "customerFirstName": "Aditya",
-        "customerLastName": "Khurana",
-        "address":
-        [ {"Description":"A-302", "City":"Delhi", "District":"Central Delhi", "State":"Delhi", "Country":"India","lat": "28.651952", 
-          "lng": "77.231495" } ],
-          "orders": [ 
-          {
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.4,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
-          },
-          {
-            "productId": 10,
-            "productName": "Video Game Controller",
-            "productCode": "GMG-0042",
-            "releaseDate": "October 15, 2015",
-            "description": "Standard two-button video game controller",
-            "price": 35.95,
-            "starRating": 3.3,
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-          }
-        ],
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-      }
-    ]  
-} 
-  
+      ]
+    },
+    {
+      "customerId": 2,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 3,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 4,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 5,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 6,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 7,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 8,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 9,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 10,
+      "customerFirstName": "Akshay",
+      "customerLastName": "Khanna",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 11,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 12,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 13,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 14,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 15,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 16,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 17,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 18,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 19,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    },
+    {
+      "customerId": 20,
+      "customerFirstName": "Arpit",
+      "customerLastName": "Garg",
+      "state": "Bengaluru",
+      "country": "India",
+      "latitude": "13.047398399999999",
+      "longitude": "77.61919999999999",
+      "imageUrl": "https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png", 
+        "orders": [ {
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "purchaseDate": "March 18, 2016",
+          "price": 32.99,
+          "starRating": 2.2
+        },
+        {
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "purchaseDate": "May 21, 2016",
+          "price": 8.9,
+          "starRating": 3.8
+        },
+        {
+          "productName": "Saw",
+          "productCode": "TBX-0022",
+          "purchaseDate": "May 15, 2016",
+          "price": 11.55,
+          "starRating": 3.4
+        }
+      ]
+    }
+  ]
+}

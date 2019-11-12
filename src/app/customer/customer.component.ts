@@ -11,6 +11,7 @@ export class CustomerComponent implements OnInit {
 
   customers: ICustomer[];
   items = [];
+  arr = [];
   pageOfItems: Array<any>;
 
   // tslint:disable-next-line: variable-name
@@ -18,7 +19,7 @@ export class CustomerComponent implements OnInit {
 
   ngOnInit() {
 
-    this._cust.getCustomers().subscribe(c => {this.customers = c;
+    this._cust.getCustomers().subscribe(c => { this.customers = c;
 
       // tslint:disable-next-line: align
       // this.items = Array(this.customers.length).fill(0).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}`}));
@@ -29,23 +30,40 @@ export class CustomerComponent implements OnInit {
       this.items = this.customers.map(({ customerId,
                                        customerFirstName,
                                        customerLastName,
-                                       address,
-                                       orders,
+                                       state,
+                                       country,
+                                       latitude,
+                                       longitude,
                                        imageUrl }) => (
                                         { customerId,
                                           customerFirstName,
                                           customerLastName,
-                                          address,
-                                          orders,
+                                          state,
+                                          country,
+                                          latitude,
+                                          longitude,
                                           imageUrl }
 
                                               ));
-                                              return console.log(this.customers);
-                                            });
-
-
-
-
+      // tslint:disable-next-line: align
+      this.arr = this.customers.map(({ customerId,
+                              customerFirstName,
+                              customerLastName,
+                              state,
+                              country,
+                              latitude,
+                              longitude,
+                              imageUrl }) => (
+                                { customerId,
+                                  customerFirstName,
+                                  customerLastName,
+                                  state,
+                                  country,
+                                  latitude,
+                                  longitude,
+                                  imageUrl }
+                                      ));
+                                    });
   }
 
 onChangePage(pageOfItems: Array<any>) {
@@ -53,7 +71,9 @@ onChangePage(pageOfItems: Array<any>) {
     this.pageOfItems = pageOfItems;
 }
 
-
+download() {
+  this._cust.downloadFile(this.customers, 'jsontocsv');
+}
 
 
 }
