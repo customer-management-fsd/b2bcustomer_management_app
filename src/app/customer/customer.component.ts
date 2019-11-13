@@ -3,6 +3,7 @@ import { ICustomer } from '../modal/customer';
 import { CustomersServices } from '../services/customers-services.service';
 import { IAddress } from '../modal/address';
 
+
 @Component({
   selector: 'app-customer',
   templateUrl: './customer.component.html',
@@ -10,6 +11,7 @@ import { IAddress } from '../modal/address';
 })
 export class CustomerComponent implements OnInit {
 
+  // page = 1;
   showCard = true;
   pageOfItems: Array<any>;
   cardN = 1;
@@ -18,18 +20,19 @@ export class CustomerComponent implements OnInit {
   listN = 2;
   customers: ICustomer[];
   address: IAddress;
-  filteredList: ICustomer[];
-  text: string;
+  // filteredList: ICustomer[];
+  // text: string;
   items = [];
   // tslint:disable-next-line: variable-name
   constructor(private _customerServices: CustomersServices) {
-    this.text = '';
+    // this.text = '';
     this.customers = [];
    }
   ngOnInit() {
     this._customerServices.getCustomers().subscribe((customers: ICustomer[]) => {
       this.customers = customers;
-      this.filteredList = customers;
+      // this.pageOfItems = this.filteredList;
+      // this.filteredList = customers;
       this.items = this.customers.map(({ customerId,
         customerFirstName,
         customerLastName,
@@ -51,19 +54,19 @@ export class CustomerComponent implements OnInit {
     });
   }
 
-  get filterText() {
-    return this.text;
-  }
+  // get filterText() {
+  //   return this.text;
+  // }
 
-  set filterText(newValue: string) {
-    this.text = newValue;
-    this.filteredList = this.text ? this.applyFilter(this.text) : this.pageOfItems;
-    console.log(this.filteredList);
-  }
+  // set filterText(newValue: string) {
+  //   this.text = newValue;
+  //   this.filteredList = this.text ? this.applyFilter(this.text) : this.customers;
+  //   console.log(this.filteredList);
+  // }
 
-  applyFilter(name: string) {
-    return this.pageOfItems.filter((cust: any) => cust.customerFirstName.indexOf(name) !== -1);
-  }
+  // applyFilter(name: string) {
+  //   return this.customers.filter((cust: any) => cust.customerFirstName.indexOf(name) !== -1);
+  // }
 
   showOrHide = (n: number) => {
     if (n === 1 && this.showCard === false) {
@@ -82,5 +85,6 @@ export class CustomerComponent implements OnInit {
     onChangePage(pageOfItems: Array<any>) {
       // update current page of items
       this.pageOfItems = pageOfItems;
+      // console.log(this.pageOfItems);
   }
 }

@@ -10,6 +10,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JwPaginationComponent } from 'jw-angular-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AgmCoreModule } from '@agm/core';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 
@@ -31,7 +32,8 @@ import { CustomerEditComponent } from './customer-edit/customer-edit.component';
     ReactiveFormsModule,
     AgmCoreModule.forRoot ({
       apiKey: 'AIzaSyBKmma20Z9FmYakWYQ8G_WMvvNY8YXilNE'
-    })
+    }),
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

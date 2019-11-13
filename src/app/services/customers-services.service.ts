@@ -13,7 +13,7 @@ export class CustomersServices {
     return this._http.get<ICustomer[]>('http://localhost:3000/customers');
   }
   public getCustomerById(id: number): Observable<ICustomer> {
-    return this._http.get<ICustomer>(`http://localhost:3000/customers/${id}`);
+    return this._http.get<ICustomer>(`http://localhost:3000/customers/?customerId=${id}`);
   }
 
   public createCustomer(customer: ICustomer): Observable<ICustomer> {
@@ -25,7 +25,7 @@ export class CustomersServices {
 
   public updateCustomer(customer: ICustomer): Observable<ICustomer> {
     const headers = new HttpHeaders({'Content-type': 'application/json'});
-    const url = `http://localhost:3000/customers/${customer.customerId}`;
+    const url = `http://localhost:3000/customers/?customerId=${customer.customerId}`;
     // tslint:disable-next-line: max-line-length
     return this._http.put<ICustomer>(url, customer, {headers}).pipe( tap(() => console.log('update Customer: ' + customer.customerId)), map(() => customer), catchError(this.handleError));
   }

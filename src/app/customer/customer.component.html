@@ -19,7 +19,7 @@
                         <div class="form-group">
                             <label class="navbarText col-sm-2">Filter:</label>
                             <div class="col-sm-10">
-                                <input type="text" [(ngModel)] = 'filterText' [ngModelOptions]="{standalone:true}"/>
+                                <input type="text" [(ngModel)] = 'filter' [ngModelOptions]="{standalone:true}"/>
                             </div>
                         </div>
                     </form>
@@ -28,13 +28,14 @@
         </div>
         <div class="container">
             <div class="row cardContainer" *ngIf='showCard'>
-                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of filteredList">
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of filteredList"> -->
+                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of pageOfItems | filter:filter;">
                     <div class="card" style="border: 5px black;">
                         <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstName +" "+ cust.customerLastName}}</a> <span class="glyphicon glyphicon-edit"></span></div>
                         <div class="cardBody">
                             <div class="clearfix">
                                 <div class="pull-left cardBodyLeft">
-                                    <a class="white"><img class="cardImage" /></a>
+                                    <a class="white"><img class="cardImage" [src] = "cust.imageUrl" /></a>
                                 </div>
                                 <div class="pull-left cardBodyRight">
                                     <div class="cardBodyContent">{{cust.state}}, {{cust.country}}</div>
@@ -68,10 +69,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let customer of customers">
-                                <td><a [routerLink]="['/customers/',customer.customerId]"><img [src] ='customer.imageUrl' style="height:50%; width: 50%" class="cardImage" alt="Customer Image" /></a></td>
+                            <tr *ngFor="let customer of pageOfItems | filter:filter; ">
+                                <td><a [routerLink]="['/customers/',customer.customerId]"><img [src] ='customer.imageUrl' class="cardImage" alt="Customer Image" /></a></td>
                                 <td><a [routerLink]="['/customers/',customer.customerId]">{{customer.customerFirstName + ' ' + customer.customerLastName}}</a></td>
-                                <td>{{customer.city}}, {{customer.state}}</td>
+                                <td>{{customer.state}}, {{customer.country}}</td>
                                 <td><a [routerLink]="['/orders/',customer.customerId]" style="font-weight:bold" >My Orders</a></td>
                                 <td><button class="btn btn-danger" data-ng-click="vm.deleteCustomer(customer.id)">Delete</button></td>
                             </tr>
