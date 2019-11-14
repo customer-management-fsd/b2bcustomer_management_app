@@ -6,6 +6,7 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "types" : ["canvasjs"],
     "experimentalDecorators": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -22,5 +23,6 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
+   
   }
 }

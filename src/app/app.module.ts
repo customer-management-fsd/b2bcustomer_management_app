@@ -11,7 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { CustomerOrderStatisticsComponent } from './customer-order-statistics/customer-order-statistics.component';
+import { MonthsStatisticsComponent } from './months-statistics/months-statistics.component';
 
 
 @NgModule({
@@ -23,6 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CustomerDetailsComponent,
     CustomerCreateComponent,
     CustomerEditComponent,
+    CustomerOrderStatisticsComponent,
+    MonthsStatisticsComponent
 
   ],
   imports: [

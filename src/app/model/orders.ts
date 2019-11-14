@@ -4,5 +4,5 @@ export interface IOrders {
         productCode: string;
         purchaseDate: string;
         price: number;
-        starRating: number;
+        rating: number;
 }
