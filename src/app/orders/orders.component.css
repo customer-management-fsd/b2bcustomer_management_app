@@ -1,0 +1,29 @@
+table{
+    margin: 0px auto;
+    width: 75%;
+}
+
+table, th, td{
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+th,td{
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(44, 76, 172);
+    color: white;
+}
+
+p{
+    text-align: center;
+}
+
+caption, p{
+    font-size: 20px;
+}

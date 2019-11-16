@@ -1,0 +1,37 @@
+<div class="row">
+        <div class="col-md-6">
+    <button (click)="exportAsXLSX()">Export<span class="Export" style="color:blue"></span></button>
+    </div>
+    <div class="col-md-6">
+    <input class="form-control" type="text" placeholder="Enter text to search" name="search" [(ngModel)]="filter">
+    </div>
+    </div>
+    <table class="row-border hover">
+        <thead>
+            <tr id="table-head">
+                <th>Id</th>
+                <th>Name</th>
+                <th colspan="5">Orders</th>
+            </tr>
+        </thead>
+        <tbody *ngFor='let ob of customers|filter:filter;'>
+            <tr>
+          <td> {{ob.customerId}}</td>
+          <td> {{ob.customerFirstName + " " + ob.customerLastName}}</td>
+          <td><b>Product Name</b></td>
+          <td><b>Product Code</b></td>
+          <td><b>Purchase Date</b></td>
+          <td><b>Price</b></td>
+          <td><b>Star Rating</b></td>
+          </tr>      
+          <tr  *ngFor="let ord of ob['orders']">
+              <td class="blank"></td>
+              <td class="blank"></td>
+              <td>{{ ord.productName }}</td>
+              <td>{{ ord.productCode }}</td>
+              <td>{{ ord.releaseDate }}</td>
+              <td>{{ ord.price }}</td>
+              <td>{{ ord.starRating }}</td>
+          </tr> 
+            </tbody>
+            </table>

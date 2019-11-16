@@ -1,0 +1,43 @@
+table{
+    margin: 0px auto;
+    width: 100%;
+}
+
+table, th, td{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+input {
+    width: 200px;
+    height: 40px;
+}
+/* th{
+    background-color: black;
+    color: grey;
+} */
+
+th, td{
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 20px;
+    /* margin-left: 450px; */
+    /* margin: 0px auto; */
+    /* align-content: center; */
+    background-color: royalblue;
+    color: white;
+    
+
+}
+
+html{
+    background-color: blue;
+}

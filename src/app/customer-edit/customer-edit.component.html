@@ -1,0 +1,150 @@
+<div class="card">
+        <div class="card-header">
+        {{pageTitle}}
+        </div>
+        
+        <div class="card-body">
+        <form novalidate
+        (ngSubmit)="saveCustomer()"
+        [formGroup]="customerform">
+        
+        <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label"
+        for="customerId">Customer Id</label>
+        <div class="col-md-8">
+        <input readonly class="form-control"
+        id="customerId"
+        type="text"
+        placeholder="Id (required)"
+        formControlName="customerId"
+        [ngClass]="{'is-invalid': displayMessage.customerId}" inputmode="numeric" pattern="[0-9]*" digitOnly />
+        <span class="invalid-feedback">
+        {{displayMessage.customerId}}
+        </span>
+        </div>
+        </div>
+    
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label"
+            for="customerFirstNameId">Customer First Name</label>
+            <div class="col-md-8">
+            <input class="form-control"
+            id="customerFirstNameId" 
+            type="text"
+            placeholder="First Name (required)"
+            formControlName="customerFirstName"
+            [ngClass]="{'is-invalid': displayMessage.customerFirstName }" />
+            <span class="invalid-feedback">
+            {{displayMessage.customerFirstName}}
+            </span>
+            </div>
+        </div>
+    
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label"
+            for="customerLastNameId">Customer Last Name</label>
+            <div class="col-md-8">
+            <input class="form-control"
+            id="customerLastNameId" 
+            type="text"
+            placeholder="Last Name"
+            formControlName="customerLastName"
+            [ngClass]="{'is-invalid': displayMessage.customerLastName }" />
+            <span class="invalid-feedback">
+            {{displayMessage.customerLastName}}
+            </span>
+            </div>
+        </div>
+        <br> 
+     <b>CUSTOMER ADDRESS</b>
+     <br>  <br>
+     <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label"
+        for="customerLatitudeId">Latitude</label>
+        <div class="col-md-8">
+        <input class="form-control"
+        id="customerLatitudeId" 
+        type="text"
+        placeholder="Enter Latitude Co-ordinates"
+        formControlName="latitude"
+        [ngClass]="{'is-invalid': displayMessage.latitude }" inputmode="numeric" pattern="[0.-9.]*" digitOnly />
+        <span class="invalid-feedback">
+        {{displayMessage.latitude}}
+        </span>
+        </div>
+    </div> 
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label"
+        for="customerLongitudeId">Longitude</label>
+        <div class="col-md-8">
+        <input class="form-control"
+        id="customerLongitudeId" 
+        type="text"
+        placeholder="Enter Longitude Co-ordinates"
+        formControlName="longitude"
+        [ngClass]="{'is-invalid': displayMessage.longitude}" inputmode="numeric" pattern="[0.-9.]*" digitOnly />
+        <span class="invalid-feedback">
+        {{displayMessage.longitude}}
+        </span>
+        </div>
+    </div>
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label"
+            for="customerAddressStateId">State</label>
+            <div class="col-md-8">
+            <input class="form-control"
+            id="customerAddressStateId" 
+            type="text"
+            placeholder="State"
+            formControlName="state"
+            [ngClass]="{'is-invalid': displayMessage.state}" />
+            <span class="invalid-feedback">
+            {{displayMessage.state}}
+            </span>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label"
+            for="customerCountryId">Country</label>
+            <div class="col-md-8">
+            <input class="form-control"
+            id="customerCountryId" 
+            type="text"
+            placeholder="Country "
+            formControlName="country"
+            [ngClass]="{'is-invalid': displayMessage.country}" />
+            <span class="invalid-feedback">
+            {{displayMessage.country}}
+            </span>
+            </div>
+        </div> 
+     
+        
+        
+        <div class="form-group row mb-2">
+        <div class="offset-md-2 col-md-4">
+        <button class="btn btn-primary mr-3"
+        style="width:80px;"
+        type="submit"
+        [title]="customerform.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
+        [disabled]="!customerform.valid"
+        >
+        Save
+        
+        </button>
+        <button class="btn btn-outline-secondary mr-3"
+        style="width:80px;"
+        type="button"
+        title="Cancel your edits"
+        [routerLink]="['/customers']">
+        Cancel
+        </button>
+        </div>
+        </div>
+        </form>
+        </div>
+        
+        <div class="alert alert-danger"
+        *ngIf="errorMessage">{{errorMessage}}
+        </div>
+        </div>

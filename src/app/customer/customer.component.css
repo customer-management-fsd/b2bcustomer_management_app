@@ -1,0 +1,39 @@
+img {
+    width: 25%;
+    height: 25%;
+}
+
+.cardHeader {
+    width: 100%;
+    height: 40px;
+    font-size: 125%;
+    padding: 7px 7px 7px 7px;
+}
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: auto;
+}
+
+.cardBody{
+    padding: 7px;
+}
+
+.cardImage{
+    width: 60px;
+    height: 60px;
+}
+
+.viewOrder{
+    height: 55px;
+}
+.glyphicon-edit{
+    float: right;
+}

@@ -1,0 +1,55 @@
+<div class="customers view indent">
+    <div class="container">
+            <h3><span class="glyphicon glyphicon-shopping-cart"></span> Orders</h3>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <button (click)='showOrHide(1)' style="background-color:white; border: 0px white; color:blue"><span class="glyphicon glyphicon-align-justify"></span> Orders</button>
+                        </li>
+                        <li>
+                            <button (click)='showOrHide(2)' style="background-color:white; border: 0px white; color:blue"><span class="glyphicon glyphicon-stats"></span> Order Stats </button>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+<div *ngIf='id===0'>
+        <div *ngFor="let customer of customers" >
+          
+        <table>
+                <caption>orders of {{customer.customerFirstName}}</caption>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+            <tr *ngFor = "let item of customer['orders']">
+              <td >{{item.productName}}</td>
+              <td>{{item.price}}</td>
+            </tr>
+          </table>
+          <p>Total Sum of Orders {{IndividualOrdersTotal[ customers.indexOf(customer)]}} </p>
+        </div>
+        </div>
+        
+        <div *ngIf='id!==0'>
+          <table>
+            <caption>orders of {{singleCustomer[0].customerFirstName}}</caption>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr *ngFor = "let item of singleCustomer[0].orders">
+          <td >{{item.productName}}</td>
+          <td>{{item.price}}</td>
+        </tr>
+        </table>
+        <p>Total Sum of Orders {{IndividualOrdersTotal[0]}} </p>
+        </div>
+        
+        <hr>
+      </div>
+    </div>
+  </div>

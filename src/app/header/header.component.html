@@ -1,0 +1,41 @@
+<div *ngIf="!isUserLoggedIn">
+    <nav class='navbar navbar-inverse' >
+    <div class='container-fluid'>
+    <a class='navbar-brand'>{{pageTitle}}</a>
+    <ul class='nav navbar-nav'>
+        <li><a [routerLink]="['/customers']" style="font-weight:bold">Customers</a></li>
+        <li><a [routerLink]="['/orders']" style="font-weight:bold">Orders</a></li>
+        <li><a [routerLink]="['/statistics']" style="font-weight:bold">statistics</a></li>
+        <li><a [routerLink]="['/monthlystatistics']" style="font-weight:bold">MonthlyStatistics</a></li>
+        <li><a [routerLink]="['/login']" style="font-weight:bold">Login</a></li>
+        
+
+    </ul>
+    </div>
+    </nav>
+    </div>
+    
+    <div *ngIf="isUserLoggedIn">
+            <nav class='navbar navbar-inverse' >
+            <div class='container-fluid'>
+            <a class='navbar-brand'>{{pageTitle}}</a>
+            <ul class='nav navbar-nav'>
+            <li><a [routerLink]="['/customers']" style="font-weight:bold">Customers</a></li>
+            <li><a [routerLink]="['/orders']" style="font-weight:bold">Orders</a></li>
+            <li><a [routerLink]="['/statistics']" style="font-weight:bold">statistics</a></li>
+            <li><a [routerLink]="['/monthlystatistics']" style="font-weight:bold">MonthlyStatistics</a></li>
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight:bold">User<span class="glyphicon glyphicon-user"></span>                <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="#">{{email}}</a></li>
+            <li><a href="#"><form class="form-inline my-2 my-lg-0" (ngSubmit)="logout()">       
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+            </form></a></li>
+                            </ul>
+                          </li>
+                          <li><a [routerLink]="['/print']" style="font-weight:bold">Export</a></li>
+            </ul>
+            
+            </div>
+            </nav>
+    </div>

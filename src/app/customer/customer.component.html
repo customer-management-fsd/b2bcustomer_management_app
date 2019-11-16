@@ -1,0 +1,93 @@
+<div class="customers view indent">
+    <div class="container">
+            <h3><span class="glyphicon glyphicon-user"></span> Customers</h3>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <button (click)='showOrHide(1)' style="background-color:white; border: 0px white; color:blue"><span class="glyphicon glyphicon-th-large"></span> Card View</button>
+                        </li>
+                        <li>
+                            <button (click)='showOrHide(2)' style="background-color:white; border: 0px white; color:blue"><span class="glyphicon glyphicon-align-justify"></span> List View</button>
+                        </li>
+                        <li>
+                                <button style="background-color:white; border: 0px white; color:blue"><a [routerLink]="['/newCustomer']"><span class="glyphicon glyphicon-plus"></span> Add Customer </a></button>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <label class="navbarText col-sm-2">Filter:</label>
+                            <div class="col-sm-10">
+                                <input type="text" [(ngModel)] = 'filter' [ngModelOptions]="{standalone:true}"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row cardContainer" *ngIf='showCard'>
+                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of pageOfItems | filter: filter;">
+                    <div class="card" style="border: 5px black;">
+                        <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstName +" "+ cust.customerLastName}}</a> <a [routerLink]="['/customers',customers.customerId,'edit']" style="color:white"><span class="glyphicon glyphicon-edit"></span></a></div>
+                        <div class="cardBody">
+                            <div class="clearfix">
+                                <div class="pull-left cardBodyLeft">
+                                    <a class="white"><img [src] = 'cust.imageUrl' class="cardImage" style="height: 25%; width: 25%"/></a>
+                                </div>
+                                <div class="pull-left cardBodyRight">
+                                    <div class="cardBodyContent">{{cust.state}}, {{cust.country}}</div>
+                                    <button (click)='showHide()' style="background-color:white; border: 0px white; color:blue"> View Orders</button>
+                                    
+                                    <div *ngIf=btnenable class="viewOrder">
+                                            <tr *ngFor = "let item of cust['orders']">
+                                            <td >{{item.productName}}</td>  
+                                        </tr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="row gridContainer" *ngIf='showList'>
+            <div class="col-md-10">
+                <div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="col-md-3" scope="col">Profile</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Orders</th>
+                                
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let customer of pageOfItems | filter: filter" class="table-info">
+                                <td class="col-md-3"><a [routerLink]="['/customers/',customer.customerId]"><img [src] ='customer.imageUrl' style="height:20%; width: 40%" alt="Customer Image" /></a></td>
+                                <td><a [routerLink]="['/customers/',customer.customerId]">{{customer.customerFirstName + ' ' + customer.customerLastName}}</a></td> 
+                                <td>{{customer.country}}, {{customer.state}}</td>
+                                <td><a [routerLink]="['/orders/',customer.customerId]" style="font-weight:bold" >My Orders</a></td>
+                                <td><button class="btn btn-danger" (click)="deleteUser(customer.customerId)" >Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="pagination pagination-centered">
+    <div class="card-footer pb-0 pt-3">
+        <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+    </div>
+    </div>
+    </div>
+</div>

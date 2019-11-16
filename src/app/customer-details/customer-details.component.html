@@ -1,0 +1,43 @@
+<div class="customers view indent">
+    <div class="container">
+            <h3><span class="glyphicon glyphicon-user"></span> Customers Information</h3>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a><span class="glyphicon glyphicon-th-large"></span> Customer Details</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/orders/',id]"><span class="glyphicon glyphicon-align-justify"></span> Customer Orders</a>
+                        </li>
+                        <li *ngFor = 'let customers of customers'>
+                            <a [routerLink]="['/customers',customers.customerId,'edit']"><span class="glyphicon glyphicon-plus"></span> Edit Customer</a>
+                        </li>
+
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;" *ngFor= 'let customers of customers'>
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img [src]='customers.imageUrl' class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ customers.customerFirstName}}</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                      <p class="card-text"><small class="text-muted">{{customers.country + " " + customers.state}}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+            </div>
+            <agm-map [latitude]="latitude" [longitude]="longitude">
+                <agm-marker [latitude]="latitude" [longitude]="longitude">
+                </agm-marker>
+           </agm-map>
+           
+</div>
