@@ -10,6 +10,7 @@ import { PrintComponent } from './print/print.component';
 import { LoginguardService } from './guard/loginguard.service';
 import {CustomerOrderStatisticsComponent} from './customer-order-statistics/customer-order-statistics.component';
 import {MonthsStatisticsComponent} from './months-statistics/months-statistics.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
   {path: 'customers', component: CustomerComponent},
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path: 'orders/:id', component: OrdersComponent},
   {path: 'newCustomer', canActivate: [LoginguardService] , component: CustomerCreateComponent},
   {path: 'customers/:id/edit', canActivate: [LoginguardService] , component: CustomerEditComponent},
-  {path: '', component: CustomerComponent},
+  {path: '', component: LandingPageComponent},
   {path: 'Login', component: LoginComponent},
   {path: 'print', component: PrintComponent},
   {path: 'statistics', component: CustomerOrderStatisticsComponent},

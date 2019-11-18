@@ -17,6 +17,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { PrintComponent } from './print/print.component';
 import {CustomerOrderStatisticsComponent} from './customer-order-statistics/customer-order-statistics.component';
 import {MonthsStatisticsComponent} from './months-statistics/months-statistics.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MonthsStatisticsComponent} from './months-statistics/months-statistics.c
     LoginComponent,
     PrintComponent,
     CustomerOrderStatisticsComponent,
-    MonthsStatisticsComponent
+    MonthsStatisticsComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

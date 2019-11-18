@@ -80,7 +80,9 @@ export class CustomerEditComponent implements OnInit {
       latitude:  ['', [Validators.required]],
       longitude: ['', [Validators.required]],
       state: ['', [Validators.required]],
-      country: ['', [Validators.required]]
+      country: ['', [Validators.required]],
+      imageUrl: [''],
+      orders: [[]]
    });
 
    // tslint:disable-next-line: align
@@ -137,7 +139,9 @@ onSaveComplete() {
         latitude: customer[0].latitude,
         longitude: customer[0].longitude,
         state: customer[0].state,
-        country: customer[0].country
+        country: customer[0].country,
+        imageUrl: customer[0].imageUrl,
+        orders: customer[0].orders
 
     });
     }

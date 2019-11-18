@@ -44,6 +44,12 @@ export class CustomerOrderStatisticsComponent implements OnInit {
         const ac = this.totalOrders.filter(order => order.productName === 'Air Conditioner');
 
         const chart = new CanvasJS.Chart('chartContainer', {
+          axisY: {
+            title: 'Units Sold per Product'
+           },
+           axisX: {
+            title: 'Products'
+           },
           animationEnabled: true,
           exportEnabled: true,
           title: {

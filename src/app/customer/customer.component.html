@@ -1,18 +1,19 @@
 <div class="customers view indent">
     <div class="container">
             <h3><span class="glyphicon glyphicon-user"></span> Customers</h3>
+            <br>
         <div class="row">
             <div class="col-md-10">
                 <div class="navbar">
                     <ul class="nav navbar-nav">
                         <li>
-                            <button (click)='showOrHide(1)' style="background-color:white; border: 0px white; color:blue"><span class="glyphicon glyphicon-th-large"></span> Card View</button>
+                            <button (click)='showOrHide(1)' style="background-color:transparent; border: 0px white; color:black; font-weight: bold;"><span class="glyphicon glyphicon-th-large"></span> Card View</button>
                         </li>
                         <li>
-                            <button (click)='showOrHide(2)' style="background-color:white; border: 0px white; color:blue"><span class="glyphicon glyphicon-align-justify"></span> List View</button>
+                            <button (click)='showOrHide(2)' style="background-color:transparent; border: 0px white; color:black; font-weight: bold;"><span class="glyphicon glyphicon-align-justify"></span> List View</button>
                         </li>
                         <li>
-                                <button style="background-color:white; border: 0px white; color:blue"><a [routerLink]="['/newCustomer']"><span class="glyphicon glyphicon-plus"></span> Add Customer </a></button>
+                                <button style="background-color:transparent; border: 0px white; font-weight: bold;"><a style="color: black" [routerLink]="['/newCustomer']"><span class="glyphicon glyphicon-plus"></span> Add Customer </a></button>
                         </li>
                     </ul>
                     <form class="navbar-form navbar-right">
@@ -26,25 +27,30 @@
                 </div>
             </div>
         </div>
+
+        <br>
+
         <div class="container">
             <div class="row cardContainer" *ngIf='showCard'>
-                <div class="col-sm-6 col-md-4 col-lg-3" style="width: 23%;" *ngFor="let cust of pageOfItems | filter: filter;">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 50%;" *ngFor="let cust of pageOfItems | filter: filter;">
                     <div class="card" style="border: 5px black;">
-                        <div class="cardHeader" style="background-color:royalblue; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstName +" "+ cust.customerLastName}}</a> <a [routerLink]="['/customers',customers.customerId,'edit']" style="color:white"><span class="glyphicon glyphicon-edit"></span></a></div>
+                        <div class="cardHeader" style="background-color: black; color: white"><a style="color: white" [routerLink]="['/customers/',cust.customerId]">{{cust.customerFirstName +" "+ cust.customerLastName}}</a> <a [routerLink]="['/customers',cust.customerId,'edit']" style="color:white"><span class="glyphicon glyphicon-edit"></span></a></div>
                         <div class="cardBody">
                             <div class="clearfix">
                                 <div class="pull-left cardBodyLeft">
-                                    <a class="white"><img [src] = 'cust.imageUrl' class="cardImage" style="height: 25%; width: 25%"/></a>
+                                    <a class="white"><img [src] = 'cust.imageUrl' class="cardImage"/></a>
                                 </div>
                                 <div class="pull-left cardBodyRight">
                                     <div class="cardBodyContent">{{cust.state}}, {{cust.country}}</div>
-                                    <button (click)='showHide()' style="background-color:white; border: 0px white; color:blue"> View Orders</button>
+                                    <button (click)='showHide()' style="background-color:transparent; border: 0px white; color:blue; font-weight: bold;">
+                                        <a [routerLink]="['/orders/',cust.customerId]">View Orders</a>
+                                    </button>
                                     
-                                    <div *ngIf=btnenable class="viewOrder">
+                                    <!-- <div *ngIf=btnenable class="viewOrder">
                                             <tr *ngFor = "let item of cust['orders']">
                                             <td >{{item.productName}}</td>  
                                         </tr>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -82,7 +88,7 @@
             </div>
         </div>
 
-
+        <br><br>
 
     <div class="pagination pagination-centered">
     <div class="card-footer pb-0 pt-3">

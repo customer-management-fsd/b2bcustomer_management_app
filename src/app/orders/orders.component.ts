@@ -29,7 +29,7 @@ export class OrdersComponent implements OnInit {
              // tslint:disable-next-line: no-string-literal
              sum += order['price'];
           }
-        this.IndividualOrdersTotal.push(sum);
+        this.IndividualOrdersTotal.push(sum.toFixed(2));
       });
       });
     } else {

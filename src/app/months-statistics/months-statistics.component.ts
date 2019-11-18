@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import  * as CanvasJS from 'canvasjs';
 import * as CanvasJS from './canvasjs.min';
 import {CustomersServices} from '../services/customers-services.service';
 
@@ -92,6 +91,13 @@ export class MonthsStatisticsComponent implements OnInit {
       // console.log(this.monthlyProductsSold);
 
       const chart = new CanvasJS.Chart('chartContainer', {
+
+        axisY: {
+           title: 'Total Units Sold'
+          },
+          axisX: {
+            title: 'Months'
+           },
         animationEnabled: true,
         exportEnabled: true,
         title: {

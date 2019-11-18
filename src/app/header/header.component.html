@@ -1,40 +1,79 @@
 <div *ngIf="!isUserLoggedIn">
-    <nav class='navbar navbar-inverse' >
+    <!-- <nav class='navbar navbar-inverse' >
     <div class='container-fluid'>
     <a class='navbar-brand'>{{pageTitle}}</a>
     <ul class='nav navbar-nav'>
         <li><a [routerLink]="['/customers']" style="font-weight:bold">Customers</a></li>
         <li><a [routerLink]="['/orders']" style="font-weight:bold">Orders</a></li>
-        <li><a [routerLink]="['/statistics']" style="font-weight:bold">statistics</a></li>
-        <li><a [routerLink]="['/monthlystatistics']" style="font-weight:bold">MonthlyStatistics</a></li>
+        <li><a [routerLink]="['/statistics']" style="font-weight:bold">Order Statistics</a></li>
+        <li><a [routerLink]="['/monthlystatistics']" style="font-weight:bold">Monthly Statistics</a></li>
         <li><a [routerLink]="['/login']" style="font-weight:bold">Login</a></li>
         
 
     </ul>
     </div>
-    </nav>
+    </nav> -->
+    <nav class='navbar navbar-inverse'>
+        <div class='container-fluid'>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            <a class='navbar-brand'>{{pageTitle}}</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class='nav navbar-nav mr-auto'>
+        <li><a class="nav-link" [routerLink]="['/customers']" style="font-weight:bold">Customers</a></li>
+        <li><a class="nav-link" [routerLink]="['/orders']" style="font-weight:bold">Orders</a></li>
+        <li><a class="nav-link" [routerLink]="['/statistics']" style="font-weight:bold">Order Statistics</a></li>
+        <li><a class="nav-link" [routerLink]="['/monthlystatistics']" style="font-weight:bold">Monthly Statistics</a></li>
+        <li><a class="nav-link" [routerLink]="['/print']" style="font-weight:bold">Export</a></li>
+        </ul>
+        <ul class = "nav navbar-nav navbar-right">
+            <li><a [routerLink]="['/login']" style="font-weight:bold">Login</a></li>
+        </ul>
+    </div>
+        
+        </div>
+        </nav>
     </div>
     
     <div *ngIf="isUserLoggedIn">
-            <nav class='navbar navbar-inverse' >
+            <nav class='navbar navbar-inverse'>
             <div class='container-fluid'>
-            <a class='navbar-brand'>{{pageTitle}}</a>
-            <ul class='nav navbar-nav'>
-            <li><a [routerLink]="['/customers']" style="font-weight:bold">Customers</a></li>
-            <li><a [routerLink]="['/orders']" style="font-weight:bold">Orders</a></li>
-            <li><a [routerLink]="['/statistics']" style="font-weight:bold">statistics</a></li>
-            <li><a [routerLink]="['/monthlystatistics']" style="font-weight:bold">MonthlyStatistics</a></li>
-            <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight:bold">User<span class="glyphicon glyphicon-user"></span>                <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-            <li><a href="#">{{email}}</a></li>
-            <li><a href="#"><form class="form-inline my-2 my-lg-0" (ngSubmit)="logout()">       
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-            </form></a></li>
-                            </ul>
-                          </li>
-                          <li><a [routerLink]="['/print']" style="font-weight:bold">Export</a></li>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a class='navbar-brand'>{{pageTitle}}</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class='nav navbar-nav mr-auto'>
+            <li><a class="nav-link" [routerLink]="['/customers']" style="font-weight:bold">Customers</a></li>
+            <li><a class="nav-link" [routerLink]="['/orders']" style="font-weight:bold">Orders</a></li>
+            <li><a class="nav-link" [routerLink]="['/statistics']" style="font-weight:bold">Order Statistics</a></li>
+            <li><a class="nav-link" [routerLink]="['/monthlystatistics']" style="font-weight:bold">Monthly Statistics</a></li>
+            <li><a class="nav-link" [routerLink]="['/print']" style="font-weight:bold">Export</a></li>
             </ul>
+            <ul class = "nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="nav-link" class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight:bold">User&nbsp;<span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                    <li><a href="#">{{email}}</a></li>
+                    <li><a href="#">
+                        <form class="form-inline my-2 my-lg-0" (ngSubmit)="logout()">       
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                        </form>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+        </div>
             
             </div>
             </nav>
