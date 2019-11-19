@@ -12,6 +12,7 @@ import {CustomerOrderStatisticsComponent} from './customer-order-statistics/cust
 import {MonthsStatisticsComponent} from './months-statistics/months-statistics.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
+
 const routes: Routes = [
   {path: 'customers', component: CustomerComponent},
   {path: 'customers/:id', component: CustomerDetailsComponent},

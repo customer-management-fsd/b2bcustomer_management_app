@@ -12,8 +12,9 @@ import { ICustomer } from '../modal/customer';
   templateUrl: './customer-create.component.html',
   styleUrls: ['./customer-create.component.css']
 })
-export class CustomerCreateComponent implements OnInit, AfterViewInit {
 
+
+export class CustomerCreateComponent implements OnInit, AfterViewInit {
 
   constructor(private fb: FormBuilder,
               private router: Router,
@@ -61,6 +62,7 @@ export class CustomerCreateComponent implements OnInit, AfterViewInit {
   errorMessage: string;
   customerform: FormGroup;
   customer: ICustomer;
+  cust: ICustomer[] = [];
   private sub: Subscription;
 
   // Use with the generic validation message class
@@ -82,21 +84,29 @@ export class CustomerCreateComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-  this.customerform = this.fb.group({
-  customerFirstName: ['', [Validators.required,
-  Validators.minLength(3),
-  Validators.maxLength(50)]],
+   this.customerService.getCustomers().
+    subscribe((customers: ICustomer[]) => { const nextId = customers[customers.length - 1].customerId;
+                                            console.log(nextId);
+          // tslint:disable-next-line: align
+          this.customerform = this.fb.group({
+        customerFirstName: ['', [Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(50)]],
 
-  customerId: ['', Validators.required],
-  customerLastName: ['', [Validators.required,
-    Validators.minLength(3),
-    Validators.maxLength(50)]],
-    latitude:  ['', [Validators.required]],
-    longitude: ['', [Validators.required]],
-    state: ['', [Validators.required]],
-    country: ['', [Validators.required]],
-    orders: [[]]
- });
+        customerId: [nextId + 1, Validators.required],
+        customerLastName: ['', [Validators.required,
+          Validators.minLength(3),
+          Validators.maxLength(50)]],
+          latitude:  ['', [Validators.required]],
+          longitude: ['', [Validators.required]],
+          state: ['', [Validators.required]],
+          country: ['', [Validators.required]],
+          imageUrl: '',
+          orders: [[]]
+       });
+
+  } );
+
 }
 
 
@@ -116,4 +126,5 @@ onSaveComplete() {
     });
     }
 
-}
+
+  }

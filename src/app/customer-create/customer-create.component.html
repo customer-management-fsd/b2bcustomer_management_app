@@ -1,32 +1,15 @@
-customer-create html
-
 <div class="card container-fluid">
         <div class="card-header">
         <h3 style="color:blue">{{pageTitle}}</h3>
-        <!-- {{pageTitle}} -->
         </div>
         
         <div class="card-body">
         <form novalidate
         (ngSubmit)="saveCustomer()"
         [formGroup]="customerform">
+            
         
-        <div class="form-group row mb-2">
-        <label class="col-md-2 col-form-label"
-        for="customerId">Customer Id</label>
-        <div class="col-md-3">
-        <input class="form-control"
-        id="customerId"
-        type="text"
-        placeholder="Id (required)"
-        formControlName="customerId"
-        [ngClass]="{'is-invalid': displayMessage.customerId}" />
-        <span class="invalid-feedback">
-        {{displayMessage.customerId}}
-        </span>
-        </div>
-        </div>
-    
+
         <div class="form-group row mb-2">
             <label class="col-md-2 col-form-label"
             for="customerFirstNameId">Customer First Name</label>
@@ -70,7 +53,7 @@ customer-create html
             type="text"
             placeholder="Latitude (required)"
             formControlName="latitude"
-            [ngClass]="{'is-invalid': displayMessage.latitude }" />
+            [ngClass]="{'is-invalid': displayMessage.latitude }" inputmode="numeric" pattern="[0.-9.]*" digitOnly />
             <span class="invalid-feedback">
             {{displayMessage.latitude}}
             </span>
@@ -85,7 +68,7 @@ customer-create html
             type="text"
             placeholder="Longitude (required)"
             formControlName="longitude"
-            [ngClass]="{'is-invalid': displayMessage.longitude}" />
+            [ngClass]="{'is-invalid': displayMessage.longitude}" inputmode="numeric" pattern="[0.-9.]*" digitOnly />
             <span class="invalid-feedback">
             {{displayMessage.longitude}}
             </span>

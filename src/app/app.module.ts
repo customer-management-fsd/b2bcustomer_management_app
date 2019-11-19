@@ -34,6 +34,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     CustomerOrderStatisticsComponent,
     MonthsStatisticsComponent,
     LandingPageComponent
+
   ],
   imports: [
     BrowserModule,
