@@ -1,0 +1,48 @@
+table{
+    margin: 0px auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table, th, td{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+input {
+    width: 200px;
+    height: 40px;
+}
+
+th{
+    /* background-color: rgb(44, 76, 172); */
+    background-color: black;
+    color: white;
+}
+
+tbody th {
+    background-color: rgba(22, 21, 21, 0.76);
+    color: white;
+}
+
+th, td{
+    height: 50px;
+    /* padding: 15px; */
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 20px;
+    /* margin-left: 450px; */
+    /* margin: 0px auto; */
+    /* align-content: center; */
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
+    border-width: 2px;
+
+}

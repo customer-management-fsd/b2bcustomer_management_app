@@ -1,0 +1,19 @@
+agm-map{
+    height: 400px;
+}
+
+img{
+    width: 75%;
+    height: 75%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title{
+    font-size: 150%;
+}
+
+.card-text{
+    font-size: 120%;
+}

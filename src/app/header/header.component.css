@@ -1,0 +1,19 @@
+.user-header .navbar-toggler{
+    float: right;
+}
+
+.navbar-inverse{
+    background-color: black !important;
+}
+
+.navbar a{
+    color: white !important;
+}
+
+.navbar a:hover{
+    color: grey !important;
+}
+
+.navbar .navbar-toggler-icon{
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+}

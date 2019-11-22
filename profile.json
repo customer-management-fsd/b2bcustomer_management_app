@@ -1,0 +1,16 @@
+{
+  "profile": [
+      {
+          "email": "arpit1234",
+          "password": "12345"
+      },
+      {
+          "email": "shubham",
+          "password": "12345"
+      },
+      {
+        "email": "rohan",
+        "password": "1234"
+      }
+  ]
+}
