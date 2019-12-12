@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
       console.log('Find');
       this.eventAggregator.publish(this.profileData.email);
       localStorage.setItem('email', this.profileData.email);
-      this.router.navigate(['./customers']);
+      this.router.navigate(['./newCustomer']);
     }
    }
 

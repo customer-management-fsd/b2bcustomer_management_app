@@ -83,7 +83,7 @@ export class CustomerCreateComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.customerService.getCustomers().subscribe((customers: ICustomer[]) => {
-      const nextId = customers[customers.length - 1].customerId;
+      const nextId = customers[customers.length - 1].customerId + 1;
       this.customerform = this.fb.group({
         customerId: [nextId],
         customerFirstName: ['', [Validators.required,

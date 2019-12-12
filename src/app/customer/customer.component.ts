@@ -93,12 +93,13 @@ next: () => this.onSaveComplete(),
 error: err => this.errorMessage = err
 });
   } else {
-    this.router.navigate(['']);
+    this.router.navigate(['./customers']);
   }
 }
   onSaveComplete(): void {
     // Reset the form to clear the flags
     console.log('Operation done');
     this.ngOnInit();
+    this.router.navigateByUrl('/reload');
     }
 }

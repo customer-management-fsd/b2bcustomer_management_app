@@ -47,9 +47,8 @@
             </ul>
             <ul class = "nav navbar-nav navbar-right">
             <li class="dropdown">
-                <a class="nav-link" class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight:bold">User&nbsp;<span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                    <li><a href="#">{{email}}</a></li>
+                <a class="nav-link" class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight:bold"><span class="glyphicon glyphicon-user"></span>{{email}}<span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color:black ">
                     <li><a href="#">
                         <form class="form-inline my-2 my-lg-0" (ngSubmit)="logout()">       
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>

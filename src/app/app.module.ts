@@ -46,7 +46,7 @@ import { LoginSocialComponent } from './login-social/login-social.component';
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot ({
-      apiKey: ''
+      apiKey: 'AIzaSyBz3hjxGazfGmgWbxc2g7M342XMn5pTI4k'
     }),
     Ng2SearchPipeModule
   ],

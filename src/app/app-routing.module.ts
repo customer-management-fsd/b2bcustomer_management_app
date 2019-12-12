@@ -29,7 +29,7 @@ const routes: Routes = [
   {path: 'print', component: PrintComponent},
   {path: 'statistics', component: CustomerOrderStatisticsComponent},
   {path: 'monthlystatistics', component: MonthsStatisticsComponent},
-  {path: 'callback', component: CustomerComponent}
+  {path: 'callback', component: CustomerCreateComponent}
 
 ];
 
